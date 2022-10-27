@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <form onsubmit="return validation()">
+        <h1>SignUp</h1>
+        <input type="text" name="" placeholder="Name" required>
+        <input type="email" name="" placeholder="Email" required>
+        <label class="aa" for="gender"> Gender</label>
+        <select name="gender">
+            <option value="none" selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+        </select>
+    <!--   <input type="text" name="" list="gender" placeholder="Gender">
+        <details id="gender" >
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+        </details>
+    -->
+        <input id="pass" type="password" name="" placeholder="Password">
+        <div id="passs"></div>
+        <input id="conpass" type="password" name="" placeholder="Confirm Password">
+        <div id="conpasss"></div>
+        <button type="submit">SignUp</button>
+        <p class="para">Already have an account  <a href="http://127.0.0.1:5501/loginpage2.html" target="_blank">Sign In</a> </p>
+    </form>
+    <script type="text/javascript" src="js/SignUp.js"></script>
+</body>
+</html>

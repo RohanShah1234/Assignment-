@@ -1,0 +1,122 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    border: solid 2px;
+    font-size: 20px;
+    background-size: cover;
+}
+.image{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.login h2{
+    margin:0 0 20px;
+    padding: 0;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+label{
+    font-weight: bold;
+}
+section{
+    padding: 0,100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    font-size: larger;
+}
+.login{
+    text-align: center;
+    background: rgba(255, 255, 255, .2);
+    box-shadow:0 5px 15px rgba(0, 0, 0,1);
+    padding: 5rem;
+    font-size: 100%;
+}
+input{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.psd{
+    margin-left: 5.5px;
+}
+input::placeholder{
+    color: blue;
+}
+button{
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 7px 15px ;
+    
+}
+button:hover{
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.imgcontainer{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.avatar{
+    width: 40%;
+    border-radius: 50%;
+}
+.forpass{
+    color: darkblue;
+    font-size: 30px;
+}
+.ca{
+    color: darkblue;
+    font-weight: bold;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -30%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: rgb(37, 172, 37);
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0, 5px 5px rgba(0,0,0,0.2);
+}

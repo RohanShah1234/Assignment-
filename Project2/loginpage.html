@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/loginpage.css">
+</head>
+<body class="image" background="image/plain.jpg">
+    <section>
+        <div>
+            <form>
+                <div class="login">
+                    <h2>Login </h2>
+                    <div class="imgcontainer">
+                    <img class="avatar" src="image/imageicon.png" alt="Avatar">
+                    </div>
+                     
+                     <div class="a">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username or email" placeholder="Enter Username" id="username" required/>
+                     </div>
+                     <div class="a">
+                        <label for="password">Password:</label>
+                        <input class="psd" type="password" name="Password" placeholder="Password" id="password" required/>
+                     </div>
+                     <div>
+                        <input type="checkbox" name="interest" value="Remember me" checked/>
+                        Remember Me
+                     </div>
+                     <button type="submit" class="btn" onclick="openpopup()">Login</button>
+                     <div class="popup" id="popup">
+                        <img src="image/check.jpg">
+                        <h2>Thank You!</h2>
+                        <p>You have successfully login. Thanks!</p>
+                        <button type="button" onclick="closepopup()">Ok</button>
+                     </div>
+
+                     <button type="Cancel">Cancel</button>
+                     <div>
+                       <p>Not registered yet? <a class="ca" href="http://127.0.0.1:5501/signup.html" target="_blank">Create Account</a></p>
+                     </div>
+                     <div>
+
+                        <a class="forpass" href="" target="_blank">Forgot Password</a>
+                     </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        let popup=document.getElementById("popup");
+        function openpopup(){
+            popup.classList.add("open-popup");
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    
+</body>
+</html>
